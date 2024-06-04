@@ -69,7 +69,7 @@ searchIcon.addEventListener("click", () => {
 async function GetWeather(location) {
   let weather;
   let fetchURL =
-    "http://api.weatherapi.com/v1/forecast.json?key=a09befba5cab486db4d00339231810&q=" +
+    "https://api.weatherapi.com/v1/forecast.json?key=a09befba5cab486db4d00339231810&q=" +
     location +
     "&days=4";
 
