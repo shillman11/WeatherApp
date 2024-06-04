@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="search-container">
+        <input class="search" type="text" placeholder="Search..." />
+        <img src="./Assets/magnify.svg" alt="" class="search-icon" />
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="temperature-container">
+        <div class="left-temp-content"></div>
+        <div class="center-temp-content"></div>
+        <div class="right-temp-content">
+          <div id="rain-container" class="right-container">
+            <img
+              src="./Assets/svg/rain.svg"
+              alt=""
+              class="right-icon"
+              id="rain-icon"
+            />
+            <div class="rain-content-container">
+              <div class="rain-title">Chance of rain</div>
+              <div class="rain-text"></div>
+            </div>
+          </div>
+          <div id="feels-container" class="right-container">
+            <img
+              src="./Assets/svg/thermometer.svg"
+              alt=""
+              class="right-icon"
+              id="feels-icon"
+            />
+            <div class="feels-content-container">
+              <div class="feels-title">Feels like</div>
+              <div class="feels-text"></div>
+            </div>
+          </div>
+          <div id="humidity-container" class="right-container">
+            <img
+              src="./Assets/svg/humidity.svg"
+              alt=""
+              class="right-icon"
+              id="humidity-icon"
+            />
+            <div class="humidity-content-container">
+              <div class="humidity-title">Humidity</div>
+              <div class="humidity-text"></div>
+            </div>
+          </div>
+
+          <div id="wind-container" class="right-container">
+            <img
+              src="./Assets/svg/wind.svg"
+              alt=""
+              class="right-icon"
+              id="wind-icon"
+            />
+            <div class="wind-content-container">
+              <div class="wind-title">Wind speed</div>
+              <div class="wind-text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="day-hour-container">
+        <div class="day-hour">
+          <div class="day-active" id="weekly">Week</div>
+          <div class="hour" id="hourly">Hour</div>
+        </div>
+        <div class="day-cards-container-active" id="day-cards-container">
+          <div class="day-card-day"></div>
+          <div class="day-card-logo"></div>
+          <div class="day-card-high"></div>
+          <div class="day-card-low"></div>
+        </div>
+        <div class="hour-cards-container-hidden" id="hour-cards-container">
+          <div class="hour-card-time"></div>
+          <div class="hour-card-temp"></div>
+          <div class="hour-card-logo"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">@shillman11</div>
+  </body>
+</html>
