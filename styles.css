@@ -198,6 +198,9 @@ body {
 .hour-cards-container-active {
   /* border: 1px solid red; */
   display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
   gap: 20px;
   justify-content: center;
   /* border: 2px solid blue; */
